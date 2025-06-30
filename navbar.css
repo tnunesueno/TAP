@@ -1,0 +1,29 @@
+
+  .navbar {
+  padding: 20px 0px;
+  z-index: 10000; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  margin: 0; 
+  box-sizing: border-box;
+}
+  
+  .nav-list li {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    height: 100%;
+  }
+
+  .nav-list {
+    height: 100%;
+    display: flex; /* Show nav items in a row on desktop */
+    align-items: center; /* Center items vertically */
+    flex-direction: row; /* Align items horizontally */
+    position: static; /* Remove dropdown behavior */
+    gap: 20px; /* Add spacing between items */
+    pointer-events: auto; /* Ensure links are clickable */
+   
+  }
