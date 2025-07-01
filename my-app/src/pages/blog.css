@@ -66,3 +66,17 @@ body {
     padding: 0;
   }
 }
+
+.card-link {
+  text-decoration: none;
+  color: black;
+}
+
+.card-link h5 {
+  color: #333;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+}

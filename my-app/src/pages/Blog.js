@@ -6,22 +6,25 @@ import Footer from '../Footer';
 import './blog.css';
 import blogPosts from '../blogPosts'; 
 
+
 function BlogPage() {
   const posts = blogPosts;
 
   return (
     <>
-      <Header />
+     <Header />
       <div className="row">
         <div className="leftcolumn">
           {posts.map((post, idx) => (
             <BlogCard
-              key={idx}
+              key={post.id}
+              id={post.id}
               title={post.title}
               description={post.description}
               date={post.date}
               text={post.text}
             />
+        
           ))}
         </div>
         <Sidebar />

@@ -7,41 +7,31 @@ import Services from './pages/Services';
 import Team from './pages/Team';
 import Calendar from './pages/Calendar';
 import Home from './pages/Home';
+import BlogPostPage from './pages/BlogPostPage'; 
 
+//import BlogPostPage from './pages/BlogPost'; // i need to make this later 
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
-
-  let Component; 
-  switch (window.location.pathname) {
-    case '/':
-      Component = BlogPage;
-      break;
-    case '/Home':
-      Component = Home;
-      break;
-    case '/About':
-      Component = About;
-      break;
-    case '/Services':
-      Component = Services;
-      break;
-    case '/Team':
-      Component = Team;
-      break;
-    case '/Calendar':
-      Component = Calendar;
-      break;
-    case '/Blogs':
-      Component = BlogPage;
-      break;
-    default:
-      Component = BlogPage; // Default to BlogPage if no match
-  }
   return (
-    <>
+    
+    <BrowserRouter>
    <Navbar  />
-   <Component />
-   </>
+   <Routes>
+       
+        <Route path="/" element={<Home />} />
+        <Route path="/Home" element={<Home />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Services" element={<Services />} />
+        <Route path="/Team" element={<Team />} />
+        <Route path="/Calendar" element={<Calendar />} />
+        <Route path="/Blog" element={<BlogPage />} />
+        <Route path="/blog/:postId" element={<BlogPostPage />} />
+
+    </Routes>
+      
+   </BrowserRouter>
   );
 }
 
