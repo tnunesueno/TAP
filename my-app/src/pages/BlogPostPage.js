@@ -18,7 +18,6 @@ function BlogPostPage() {
 
   return (
     <>
-      <Header />
       <div className="blog-post">
         <h1>{post.title}</h1>
         <h5>{post.date}</h5>
@@ -28,7 +27,7 @@ function BlogPostPage() {
         </div>
         <br />
         <br />
-        <Link to="/Blog">Back to Blogs</Link>
+        <Link className="back-link" to="/Blog">Back to Blogs</Link>
       </div>
       <Footer />
     </>
