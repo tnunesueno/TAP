@@ -27,3 +27,8 @@
     pointer-events: auto; /* Ensure links are clickable */
    
   }
+
+  .nav li.active {
+    font-weight: bold; 
+    background-color : #007bff; 
+  }
