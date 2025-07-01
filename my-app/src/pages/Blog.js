@@ -4,29 +4,17 @@ import BlogCard from '../BlogCard';
 import Sidebar from '../Sidebar';
 import Footer from '../Footer';
 import './blog.css';
+import blogPosts from '../blogPosts'; 
 
 function BlogPage() {
-  const blogPosts = [
-    {
-      title: "TITLE HEADING",
-      description: "Title description",
-      date: "Dec 7, 2017",
-      text: "Some text.."
-    },
-    {
-      title: "TITLE HEADING",
-      description: "Title description",
-      date: "Sep 2, 2017",
-      text: "Some text.."
-    }
-  ];
+  const posts = blogPosts;
 
   return (
     <>
       <Header />
       <div className="row">
         <div className="leftcolumn">
-          {blogPosts.map((post, idx) => (
+          {posts.map((post, idx) => (
             <BlogCard
               key={idx}
               title={post.title}
