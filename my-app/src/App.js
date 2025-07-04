@@ -20,14 +20,15 @@ function App() {
    <Navbar  />
    <Routes>
     
-        <Route path="/Blog" element={<BlogPage />} />
-        <Route path="/" element={<Home />} />
+        
+        <Route path="/" element={<BlogPage />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Services" element={<Services />} />
         <Route path="/Team" element={<Team />} />
         <Route path="/Calendar" element={<Calendar />} />
         <Route path="/blog/:postId" element={<BlogPostPage />} />
+        <Route path="/Blog" element={<BlogPage />} />
 
     </Routes>
       
