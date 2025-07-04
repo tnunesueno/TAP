@@ -19,14 +19,14 @@ function App() {
     <BrowserRouter>
    <Navbar  />
    <Routes>
-       
+    
+        <Route path="/Blog" element={<BlogPage />} />
         <Route path="/" element={<Home />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Services" element={<Services />} />
         <Route path="/Team" element={<Team />} />
         <Route path="/Calendar" element={<Calendar />} />
-        <Route path="/Blog" element={<BlogPage />} />
         <Route path="/blog/:postId" element={<BlogPostPage />} />
 
     </Routes>

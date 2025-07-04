@@ -20,6 +20,8 @@ function BlogPostPage() {
     <>
       <div className="blog-post">
         <h1>{post.title}</h1>
+        <br />
+        
         <h5>{post.date}</h5>
         <h5>{post.description}</h5>
         <div className="blog-content">
