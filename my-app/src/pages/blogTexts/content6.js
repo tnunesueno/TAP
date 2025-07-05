@@ -1,0 +1,10 @@
+const text6 = `
+    Getting rejected from colleges really sucks, as both a hit to the ego and to your potential future. It can hurt. However, it is not the end– there are many paths to success. College rejections taught me that a rejection isn’t personal, and that you don’t need to get into your dream school to be happy.
+    I was rejected from a lot of the schools I applied to, so I have a lot of experience with this feeling. When I was applying, I didn’t really have a “dream school,” so I may have felt differently than people who did have a dream school. I didn’t have my hopes or expectations for any one school, but rather knew I could flourish at many and based my expectations on where I got in. However, there was still a lot of disappointment when I received rejections. 
+    What I learned from this is that there are a lot of options for your future, which is something I believe more generally. There is no one “right” path– many can lead you to where you want to go. So, though one door closes, other doors open. Though you may have loved your dream school, it doesn’t mean that you won’t be successful elsewhere. 
+    The other thing I learned is that it really isn’t personal. It isn’t necessarily about how well you did, and definitely should not impact your sense of self. Colleges look for different things in different students. You may have been a really good student on paper and they still wouldn’t have chosen you because they’re looking for something else. 
+    Additionally, you can’t predict whether you will be happy at a given school. One of my friends had a dream school that she ultimately didn’t get into, but later met people who went to that school and left because they didn’t like it. So in the end, you can be happy anywhere. 
+    So, don’t take any college rejections personally, and remember that there are many places that you can be happy. 
+`; 
+
+export default text6;

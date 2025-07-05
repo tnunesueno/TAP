@@ -15,7 +15,7 @@ function BlogPage() {
      <Header />
       <div className="row">
         <div className="leftcolumn">
-          {posts.map((post, idx) => (
+          {posts.map((post) => (
             <BlogCard
               key={post.id}
               id={post.id}
